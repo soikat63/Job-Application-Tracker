@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Tracker </title>
+
+    <!-- Tailwind CDN Link  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Import Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Import Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body class="font-[geist] bg-[#F8FAFC]">
+    <header class="max-w-6xl mx-auto px-4 mt-10 md:mt-16">
+        <div>
+            <h1 class="font-bold text-blue-900 text-2xl md:text-3xl lg:text-4xl">
+                Job Application Tracker
+            </h1>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
+
+                <div class="p-5 bg-white border border-gray-200 rounded-lg ">
+                    <p class="font-medium text-sm text-gray-900">Total</p>
+                    <p class="font-bold text-blue-950 text-2xl mt-2">0</p>
+                </div>
+
+                <div class="p-5 bg-white border border-gray-200 rounded-lg ">
+                    <p class="font-medium text-sm text-gray-900">Interview</p>
+                    <p class="font-bold text-green-500 text-2xl mt-2">0</p>
+                </div>
+
+                <div class="p-5 bg-white border border-gray-200 rounded-lg ">
+                    <p class="font-medium text-sm text-gray-900">Rejected</p>
+                    <p class="font-bold text-red-500 text-2xl mt-2">0</p>
+                </div>
+
+            </div>
+
+            <div class="w-full h-0.5 bg-gray-200 mt-8"></div>
+        </div>
+    </header>
+
+    <section class="max-w-6xl mx-auto px-4 mt-10 mb-20">
+
+        <!-- Top Header Row -->
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+
+            <h2 class="text-xl md:text-2xl font-bold text-blue-900">
+                Available Jobs
+            </h2>
+
+            <p class="text-sm text-gray-500">
+                8 jobs
+            </p>
+
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap gap-3 mt-6">
+
+            <button class="px-4 py-2 text-sm font-medium bg-blue-600 text-white rounded-md cursor-pointer">
+                All
+            </button>
+
+            <button class="px-4 py-2 text-sm font-medium bg-gray-100 text-gray-700 rounded-md cursor-pointer">
+                Interview
+            </button>
+
+            <button class="px-4 py-2 text-sm font-medium bg-gray-100 text-gray-700 rounded-md  cursor-pointer">
+                Rejected
+            </button>
+
+        </div>
+
+        <!-- Job Card 1 -->
+        <div class="mt-8 bg-white border border-gray-200 rounded-xl p-6 ">
+
+            <!-- Top Row -->
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-900">
+                        Mobile First Corp
+                    </h3>
+
+                    <p class="text-sm text-gray-600 mt-1">
+                        React Native Developer
+                    </p>
+
+                    <p class="text-sm text-gray-500 mt-2">
+                        Remote • Full-time • $130,000 - $175,000
+                    </p>
+                </div>
+
+                <!-- Delete Button -->
+                <button
+                    class="self-start md:self-auto text-gray-400 hover:text-red-500 transition w-8 h-8 rounded-full border border-gray-200 hover:border-red-500  p-2 flex items-center justify-center cursor-pointer">
+                    <i class="fa-regular fa-trash-can"></i>
+                </button>
+
+            </div>
+
+            <!-- Status Badge -->
+            <div class="mt-4">
+                <span class="inline-block text-xs font-medium bg-gray-200 text-gray-700 px-3 py-2 rounded-sm">
+                    NOT APPLIED
+                </span>
+            </div>
+
+            <!-- Description -->
+            <p class="text-sm text-gray-600 mt-4">
+                Build cross-platform mobile applications using React Native.
+                Work on products used by millions of users worldwide.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap gap-3 mt-6">
+
+                <button
+                    class="px-4 py-2 text-sm font-medium border border-green-500 text-green-600 rounded-md hover:bg-green-50 transition cursor-pointer">
+                    INTERVIEW
+                </button>
+
+                <button
+                    class="px-4 py-2 text-sm font-medium border border-red-500 text-red-500 rounded-md hover:bg-red-50 transition cursor-pointer">
+                    REJECTED
+                </button>
+
+            </div>
+
+        </div>
+        <!-- Job Card 2 -->
+        <div class="mt-8 bg-white border border-gray-200 rounded-xl p-6 ">
+
+            <!-- Top Row -->
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-900">
+                        WebFlow Agency
+                    </h3>
+
+                    <p class="text-sm text-gray-600 mt-1">
+                        Web Designer & Developer
+                    </p>
+
+                    <p class="text-sm text-gray-500 mt-2">
+                        Los Angeles, CA
+                        •
+                        Part-time
+                        •
+                        $80,000 - $120,000
+                    </p>
+                </div>
+
+                <!-- Delete Button -->
+                <button
+                    class="self-start md:self-auto text-gray-400 hover:text-red-500 transition w-8 h-8 rounded-full border border-gray-200 hover:border-red-500  p-2 flex items-center justify-center cursor-pointer">
+                    <i class="fa-regular fa-trash-can"></i>
+                </button>
+
+            </div>
+
+            <!-- Status Badge -->
+            <div class="mt-4">
+                <span class="inline-block text-xs font-medium bg-gray-200 text-gray-700 px-3 py-2 rounded-sm">
+                    NOT APPLIED
+                </span>
+            </div>
+
+            <!-- Description -->
+            <p class="text-sm text-gray-600 mt-4">
+                Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern
+                web design
+                trends.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap gap-3 mt-6">
+
+                <button
+                    class="px-4 py-2 text-sm font-medium border border-green-500 text-green-600 rounded-md hover:bg-green-50 transition cursor-pointer">
+                    INTERVIEW
+                </button>
+
+                <button
+                    class="px-4 py-2 text-sm font-medium border border-red-500 text-red-500 rounded-md hover:bg-red-50 transition cursor-pointer">
+                    REJECTED
+                </button>
+
+            </div>
+
+        </div>
+        <!-- Job Card 3 -->
+        <div class="mt-8 bg-white border border-gray-200 rounded-xl p-6 ">
+
+            <!-- Top Row -->
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-900">
+                        DataViz Solutions
+                    </h3>
+
+                    <p class="text-sm text-gray-600 mt-1">
+                        Data Visualization Specialist
+                    </p>
+
+                    <p class="text-sm text-gray-500 mt-2">
+                        Boston, MA
+                        •
+                        Full-time
+                        •
+                        $125,000 - $165,000
+                    </p>
+                </div>
+
+                <!-- Delete Button -->
+                <button
+                    class="self-start md:self-auto text-gray-400 hover:text-red-500 transition w-8 h-8 rounded-full border border-gray-200 hover:border-red-500  p-2 flex items-center justify-center cursor-pointer">
+                    <i class="fa-regular fa-trash-can"></i>
+                </button>
+
+            </div>
+
+            <!-- Status Badge -->
+            <div class="mt-4">
+                <span class="inline-block text-xs font-medium bg-gray-200 text-gray-700 px-3 py-2 rounded-sm">
+                    NOT APPLIED
+                </span>
+            </div>
+
+            <!-- Description -->
+            <p class="text-sm text-gray-600 mt-4">
+                Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong
+                analytical thinking.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap gap-3 mt-6">
+
+                <button
+                    class="px-4 py-2 text-sm font-medium border border-green-500 text-green-600 rounded-md hover:bg-green-50 transition cursor-pointer">
+                    INTERVIEW
+                </button>
+
+                <button
+                    class="px-4 py-2 text-sm font-medium border border-red-500 text-red-500 rounded-md hover:bg-red-50 transition cursor-pointer">
+                    REJECTED
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Job Card 4 -->
+        <div class="mt-8 bg-white border border-gray-200 rounded-xl p-6 ">
+
+            <!-- Top Row -->
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-900">
+                        CloudFirst Inc
+                    </h3>
+
+                    <p class="text-sm text-gray-600 mt-1">
+                        Backend Developer
+                    </p>
+
+                    <p class="text-sm text-gray-500 mt-2">
+                        Seattle, WA
+                        •
+                        Full-time
+                        •
+                        $140,000 - $190,000
+                    </p>
+                </div>
+
+                <!-- Delete Button -->
+                <button
+                    class="self-start md:self-auto text-gray-400 hover:text-red-500 transition w-8 h-8 rounded-full border border-gray-200 hover:border-red-500  p-2 flex items-center justify-center cursor-pointer">
+                    <i class="fa-regular fa-trash-can"></i>
+                </button>
+
+            </div>
+
+            <!-- Status Badge -->
+            <div class="mt-4">
+                <span class="inline-block text-xs font-medium bg-gray-200 text-gray-700 px-3 py-2 rounded-sm">
+                    NOT APPLIED
+                </span>
+            </div>
+
+            <!-- Description -->
+            <p class="text-sm text-gray-600 mt-4">
+                Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and
+                cloud infrastructure.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap gap-3 mt-6">
+
+                <button
+                    class="px-4 py-2 text-sm font-medium border border-green-500 text-green-600 rounded-md hover:bg-green-50 transition cursor-pointer">
+                    INTERVIEW
+                </button>
+
+                <button
+                    class="px-4 py-2 text-sm font-medium border border-red-500 text-red-500 rounded-md hover:bg-red-50 transition cursor-pointer">
+                    REJECTED
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Job Card 5 -->
+        <div class="mt-8 bg-white border border-gray-200 rounded-xl p-6 ">
+
+            <!-- Top Row -->
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-900">
+                        Innovation Labs
+                    </h3>
+
+                    <p class="text-sm text-gray-600 mt-1">
+                        UI/UX Engineer
+                    </p>
+
+                    <p class="text-sm text-gray-500 mt-2">
+                        Austin, TX
+                        •
+                        Full-time
+                        •
+                        $110,000 - $150,000
+                    </p>
+                </div>
+
+                <!-- Delete Button -->
+                <button
+                    class="self-start md:self-auto text-gray-400 hover:text-red-500 transition w-8 h-8 rounded-full border border-gray-200 hover:border-red-500  p-2 flex items-center justify-center cursor-pointer">
+                    <i class="fa-regular fa-trash-can"></i>
+                </button>
+
+            </div>
+
+            <!-- Status Badge -->
+            <div class="mt-4">
+                <span class="inline-block text-xs font-medium bg-gray-200 text-gray-700 px-3 py-2 rounded-sm">
+                    NOT APPLIED
+                </span>
+            </div>
+
+            <!-- Description -->
+            <p class="text-sm text-gray-600 mt-4">
+                Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap gap-3 mt-6">
+
+                <button
+                    class="px-4 py-2 text-sm font-medium border border-green-500 text-green-600 rounded-md hover:bg-green-50 transition cursor-pointer">
+                    INTERVIEW
+                </button>
+
+                <button
+                    class="px-4 py-2 text-sm font-medium border border-red-500 text-red-500 rounded-md hover:bg-red-50 transition cursor-pointer">
+                    REJECTED
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Job Card 6 -->
+        <div class="mt-8 bg-white border border-gray-200 rounded-xl p-6 ">
+        
+            <!-- Top Row -->
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+        
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-900">
+                        MegaCorp Solutions
+                    </h3>
+        
+                    <p class="text-sm text-gray-600 mt-1">
+                        JavaScript Developer
+                    </p>
+        
+                    <p class="text-sm text-gray-500 mt-2">
+                        New York, NY
+                        •
+                        Full-time
+                        •
+                        $130,000 - $170,00
+                    </p>
+                </div>
+        
+                <!-- Delete Button -->
+                <button
+                    class="self-start md:self-auto text-gray-400 hover:text-red-500 transition w-8 h-8 rounded-full border border-gray-200 hover:border-red-500  p-2 flex items-center justify-center cursor-pointer">
+                    <i class="fa-regular fa-trash-can"></i>
+                </button>
+        
+            </div>
+        
+            <!-- Status Badge -->
+            <div class="mt-4">
+                <span class="inline-block text-xs font-medium bg-gray-200 text-gray-700 px-3 py-2 rounded-sm">
+                    NOT APPLIED
+                </span>
+            </div>
+        
+            <!-- Description -->
+            <p class="text-sm text-gray-600 mt-4">
+                Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health
+                insurance, and professional development opportunities.
+            </p>
+        
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap gap-3 mt-6">
+        
+                <button
+                    class="px-4 py-2 text-sm font-medium border border-green-500 text-green-600 rounded-md hover:bg-green-50 transition cursor-pointer">
+                    INTERVIEW
+                </button>
+        
+                <button
+                    class="px-4 py-2 text-sm font-medium border border-red-500 text-red-500 rounded-md hover:bg-red-50 transition cursor-pointer">
+                    REJECTED
+                </button>
+        
+            </div>
+        
+        </div>
+
+
+        <!-- Job Card 7 -->
+        <div class="mt-8 bg-white border border-gray-200 rounded-xl p-6 ">
+
+            <!-- Top Row -->
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-900">
+                    StartupXYZ
+                    </h3>
+
+                    <p class="text-sm text-gray-600 mt-1">
+                    Full Stack Engineer
+                    </p>
+
+                    <p class="text-sm text-gray-500 mt-2">
+                        Remote
+                        •
+                        Full-time
+                        •
+                        $120,000 - $160,000
+                    </p>
+                </div>
+
+                <!-- Delete Button -->
+                <button
+                    class="self-start md:self-auto text-gray-400 hover:text-red-500 transition w-8 h-8 rounded-full border border-gray-200 hover:border-red-500  p-2 flex items-center justify-center cursor-pointer">
+                    <i class="fa-regular fa-trash-can"></i>
+                </button>
+
+            </div>
+
+            <!-- Status Badge -->
+            <div class="mt-4">
+                <span class="inline-block text-xs font-medium bg-gray-200 text-gray-700 px-3 py-2 rounded-sm">
+                    NOT APPLIED
+                </span>
+            </div>
+
+            <!-- Description -->
+            <p class="text-sm text-gray-600 mt-4">
+                Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits
+                and equity package included.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap gap-3 mt-6">
+
+                <button
+                    class="px-4 py-2 text-sm font-medium border border-green-500 text-green-600 rounded-md hover:bg-green-50 transition cursor-pointer">
+                    INTERVIEW
+                </button>
+
+                <button
+                    class="px-4 py-2 text-sm font-medium border border-red-500 text-red-500 rounded-md hover:bg-red-50 transition cursor-pointer">
+                    REJECTED
+                </button>
+
+            </div>
+
+        </div>
+        <!-- Job Card 8 -->
+        <div class="mt-8 bg-white border border-gray-200 rounded-xl p-6 ">
+
+            <!-- Top Row -->
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-900">
+                        TechCorp Industries
+                    </h3>
+
+                    <p class="text-sm text-gray-600 mt-1">
+                        Senior Frontend Developer
+                    </p>
+
+                    <p class="text-sm text-gray-500 mt-2">
+                        San Francisco, CA
+                        •
+                        Full-time
+                        •
+                        $130,000 - $175,000
+                    </p>
+                </div>
+
+                <!-- Delete Button -->
+                <button
+                    class="self-start md:self-auto text-gray-400 hover:text-red-500 transition w-8 h-8 rounded-full border border-gray-200 hover:border-red-500  p-2 flex items-center justify-center cursor-pointer">
+                    <i class="fa-regular fa-trash-can"></i>
+                </button>
+
+            </div>
+
+            <!-- Status Badge -->
+            <div class="mt-4">
+                <span class="inline-block text-xs font-medium bg-gray-200 text-gray-700 px-3 py-2 rounded-sm">
+                    NOT APPLIED
+                </span>
+            </div>
+
+            <!-- Description -->
+            <p class="text-sm text-gray-600 mt-4">
+                We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You
+                will work with a talented team on cutting-edge projects.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap gap-3 mt-6">
+
+                <button
+                    class="px-4 py-2 text-sm font-medium border border-green-500 text-green-600 rounded-md hover:bg-green-50 transition cursor-pointer">
+                    INTERVIEW
+                </button>
+
+                <button
+                    class="px-4 py-2 text-sm font-medium border border-red-500 text-red-500 rounded-md hover:bg-red-50 transition cursor-pointer">
+                    REJECTED
+                </button>
+
+            </div>
+
+        </div>
+        
+
+    </section>
+
+</body>
+
+</html>
